@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Button Generator ( HTML , CSS  & JAVASCRIPT) </title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive/responsive.css">
+
+    <!-- font awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- javascript -->
+    <script src="app.js" defer></script>
+   
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <h1>CSS Button Generator</h1>
+        <div class="box-content">
+            <div class="box">
+                <div class="accordion">
+                    <div class="acc-item">
+                        <div class="item-title">
+                            <span>Font / Text</span>
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <div class="item-content">
+                            <div class="font_text-box">
+                                <div class="input-text">
+                                    <label for="text-input">Button Text</label>
+                                    <input type="text" id="text-input" value="button" maxlength="10">
+                                </div>
+                                <div class="font-family">
+                                    <label for="font-family-select">Font Family</label>
+                                    <select id="font-family-select">
+                                        <option value="initial">Select Font</option>
+                                        <option value="arial">Arial</option>
+                                        <option value="sans-serif">sans-serif</option>
+                                        <option value="monospace">monospace</option>
+                                        <option value="verdana">Verdana</option>
+                                        <option value="georgia">Georgia</option>
+                                    </select>
+                                </div>
+                                <div class="text-color">
+                                    <label for="input-text-color">Text Color</label>
+                                    <div>
+                                        <input type="color" id="input-text-color">
+                                        <input type="text" id="text-color-output" value="#000000" maxlength="7">
+                                    </div>
+                                </div>
+                                <div class="font-size">
+                                    <label for="input-font-size">Font Size: 16px</label>
+                                    <input type="range" id="input-font-size" value="16" max="50">
+                                </div>
+                                <div class="text-shadow">
+                                    <div>
+                                        <input id="off-on-text-shadaw" type="checkbox">
+                                        <label for="off-on-text-shadaw">Text-Shadaw ? <span>OFF</span></label>
+                                    </div>
+                                    <div class="checkbox-output-content box-disabled">
+                                        <div>
+                                            <label for="input-text-shadow-color">Text Shadow Color</label>
+                                            <div class="i-t-s-c">
+                                                <input type="color" id="input-text-shadow-color" disabled>
+                                                <input type="text" id="input-text-shadow-color-output" value="#000000"
+                                                    disabled maxlength="7">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <label for="X-offset">X offset: 0px</label>
+                                                <input type="range" id="X-offset" value="0" min="-100" max="100"
+                                                    disabled>
+                                            </div>
+                                            <div>
+                                                <label for="Y-offset">Y offset: 0px</label>
+                                                <input type="range" id="Y-offset" value="0" min="-100" max="100"
+                                                    disabled>
+                                            </div>
+                                            <div>
+                                                <label for="blur">Blur: 0px</label>
+                                                <input type="range" id="blur" value="0" max="20" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="font-bold">
+                                    <input type="checkbox" id="bold" value="bolder">
+                                    <label for="bold">Font Bold?</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <div class="item-title">
+                            <span>Button</span>
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <div class="item-content">
+                            <div class="_button-full-content">
+                                <div class="padding-content">
+                                    <div>Padding: 5px 10px</div>
+                                    <div>
+                                        <div>
+                                            <label for="p_top-bottom">Top -- Bottom</label>
+                                            <input type="range" id="p_top-bottom" value="5">
+                                        </div>
+                                        <div>
+                                            <label for="p_left-right">Left -- Right</label>
+                                            <input type="range" id="p_left-right" value="10">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-shadow">
+                                    <div>
+                                        <input type="checkbox" id="off-on-box-shadaw">
+                                        <label for="off-on-box-shadaw">Button Box-Shadaw ? OFF</label>
+                                    </div>
+                                    <div class="bs-contect_ed box-disabled">
+                                        <div>
+                                            <label for="input-box-shadow-color">Box Shadow Color</label>
+                                            <div class="i-b-s-c">
+                                                <input type="color" id="input-box-shadow-color" disabled>
+                                                <input type="text" id="input-box-shadow-color-output" value="#000000"
+                                                    maxlength="7" disabled>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <label for="box-X-offset">X offset: 0px</label>
+                                                <input id="box-X-offset" type="range" value="0" min="-100" max="100"
+                                                    disabled>
+                                            </div>
+                                            <div>
+                                                <label for="box-Y-offset">Y offset: 0px</label>
+                                                <input id="box-Y-offset" type="range" value="0" min="-100" max="100"
+                                                    disabled>
+                                            </div>
+                                            <div>
+                                                <label for="box-blur">Blur: 0px</label>
+                                                <input id="box-blur" type="range" value="0" max="20" disabled>
+                                            </div>
+                                            <div>
+                                                <label for="box-spread">Spread: 0px</label>
+                                                <input id="box-spread" type="range" value="0" max="20" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <div class="item-title">
+                            <span>Border</span>
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <div class="item-content">
+                            <div class="border-full-content">
+                                <div class="border-width">
+                                    <label for="border-width-input">Border Width: 1px</label>
+                                    <input type="range" id="border-width-input" value="1"
+                                        max="20">
+                                </div>
+                                <div class="border-style">
+                                    <label for="border-style-select">Border Style</label>
+                                    <select id="border-style-select">
+                                        <option value="solid">Solid</option>
+                                        <option value="dashed">Dashed</option>
+                                        <option value="dotted">Dotted</option>
+                                        <option value="double">Double</option>
+                                        <option value="groove">Groove</option>
+                                        <option value="inset">Inset</option>
+                                        <option value="Outset">Outset</option>
+                                        <option value="ridge">Ridge</option>
+                                    </select>
+                                </div>
+                                <div class="border-color">
+                                    <label for="border-input-color">Border Color</label>
+                                    <div>
+                                        <input type="color" id="border-input-color">
+                                        <input type="text" id="border-color-input-output" value="#000000" maxlength="7">
+                                    </div>
+                                </div>
+                                <div class="border-radius">
+                                    <label for="border-radius-input">Border Radius: 0px</label>
+                                    <input type="range" id="border-radius-input" value="0"
+                                        max="50">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <div class="item-title">
+                            <span>Background</span>
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <div class="item-content">
+                            <div class="button-background-color-content">
+                                <div class="background-color">
+                                    <label for="background-input-color">Background Color</label>
+                                    <div>
+                                        <input type="color" id="background-input-color" value="#ffffff">
+                                        <input type="text" id="background-color-input-output" value="#ffffff" maxlength="7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <div class="item-title">
+                            <span>Hover</span>
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <div class="item-content">
+                            <div class="button-hover-content">
+                                <div class="hover-text-color">
+                                    <label for="hover-text-input-color">Hover Text Color</label>
+                                    <div>
+                                        <input type="color" id="hover-text-input-color"
+                                            value="#000000">
+                                        <input type="text" id="hover-text-color-input-output" value="#000000" maxlength="7">
+                                    </div>
+                                </div>
+                                <div class="hover-background-color">
+                                    <label for="hover-background-input-color">Hover Background Color</label>
+                                    <div>
+                                        <input type="color" id="hover-background-input-color" value="#ffffff">
+                                        <input type="text" id="hover-background-color-input-output" value="#ffffff" maxlength="7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box btn-output">
+                <div class="output-button-style-content">
+                    <button type="button" class="btn costom-style">
+                        button
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="output-html-css-code">
+        <div class="html-code-content">
+            <button class="html-btn" type="button">HTML CODE</button>
+            <div class="html-code-box">
+                <div class="button-area">
+                    <h2>HTML Code Here</h2>
+                    <div>
+                        <button type="button" class="copy-btn" title="only pc copy code">
+                            <i class="fa-solid fa-copy"></i>
+                        </button>
+                        <button type="button" class="close-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <div class="html-code-text-box">
+                        <pre>
+                            &#60;button type="button" class="btn"&#62;button&#60;&#47;button&#62;
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="css-code-content">
+            <button class="css-btn" type="button">CSS CODE</button>
+            <div class="css-code-box">
+                <div class="button-area">
+                    <h2>CSS Code here</h2>
+                    <div>
+                        <button type="button" class="copy-btn" title="only pc copy code">
+                            <i class="fa-solid fa-copy"></i>
+                        </button>
+                        <button type="button" class="close-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <div class="css-style-text-box">
+                        <div>
+                            <p class="line-1">.btn {</p>
+                            <div>
+                                <p class="line-2">font-family: initial;</p>
+                                <p class="line-3">color: #000000;</p>
+                                <p class="line-4">font-size: 16px;</p>
+                                <p class="line-5">text-shadow: 0 0 0 #000000;</p>
+                                <p class="line-6">font-weight: normal;</p>
+                                <p class="line-7">padding: 5px 10px;</p>
+                                <p class="line-8">box-shadow: 0 0 0 0 #000000;</p>
+                                <p class="line-9">border: 1px solid #000000;</p>
+                                <p class="line-10">border-radius: 0px;</p>
+                                <p class="line-11">background-color: #ffffff;</p>
+                            </div>
+                            <p class="line-12">}</p>
+                        </div>
+                        <div>
+                            <p class="line-13">.btn:hover {</p>
+                            <div>
+                                <p class="line-14">color: #000000;</p>
+                                <p class="line-15"> background-color: #ffffff;</p>
+                            </div>
+                            <p class="line-16">}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

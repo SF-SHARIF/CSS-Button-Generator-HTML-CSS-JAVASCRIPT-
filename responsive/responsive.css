@@ -1,0 +1,158 @@
+@media only screen and (min-width: 500px) {
+
+    /* ------------------------------------------------------------------ */
+    /*                       common style start                           */
+    /* ------------------------------------------------------------------ */
+    .container h1 {
+        font-size: 2rem;
+    }
+
+
+    .box {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /*                       common style end                             */
+    /* ------------------------------------------------------------------ */
+    /* ------------------------------------------------------------------ */
+    /*                  container box-content style start                 */
+    /* ------------------------------------------------------------------ */
+    .box-content {
+        flex-direction: row-reverse;
+        width: 95%;
+    }
+
+
+    .box-content .box:nth-child(1) {
+        margin: 0;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /*                  container box-content style end                   */
+    /* ------------------------------------------------------------------ */
+    /* ------------------------------------------------------------------ */
+    /*                       accordion style start                        */
+    /* ------------------------------------------------------------------ */
+    .accordion .acc-item:nth-child(1) {
+        margin-top: 0;
+    }
+
+    .acc-item {
+        max-width: 450px;
+    }
+
+    .acc-item .item-title {
+        padding: 10px;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /*                       accordion style end                          */
+    /* ------------------------------------------------------------------ */
+    /* ------------------------------------------------------------------ */
+    /*                  button output display style start                 */
+    /* ----------------------------------------------------------------- */
+    .box.btn-output {
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .output-button-style-content {
+        margin: 0;
+        height: 244px;
+        max-width: 450px;
+        max-height: 244px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 3%;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /*                  button output display style end                   */
+    /* ------------------------------------------------------------------ */
+    /* ------------------------------------------------------------------ */
+    /*                     Output Code Show Style Start                   */
+    /* ------------------------------------------------------------------ */
+    .output-html-css-code {
+        position: relative;
+        width: 60%;
+        max-width: 620px;
+        margin-top: 15px;
+        /* border: 1px solid; */
+        margin: 19px auto 0;
+    }
+
+    /* ------ html box inner content style */
+
+    .html-code-box .button-area h2,
+    .css-code-box .button-area h2 {
+        font-size: 2rem;
+    }
+
+    .html-code-box .html-code-text-box pre {
+        font-size: 1.5rem;
+    }
+
+    .css-code-box .css-style-text-box {
+        width: 85%;
+        margin: 10px auto;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /*                     Output Code Show Style end                     */
+    /* ------------------------------------------------------------------ */
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    /* ------------------------------------------------------------------ */
+    /*                     Output Code Show Style Start                   */
+    /* ------------------------------------------------------------------ */
+    /* ------ html box inner content style */
+    .html-code-box .html-code-text-box pre {
+        font-size: 1.2rem;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /*                     Output Code Show Style end                     */
+    /* ------------------------------------------------------------------ */
+}
+
+@media only screen and (max-width: 800px) {
+
+    /* ------------------------------------------------------------------ */
+    /*                     Output Code Show Style Start                   */
+    /* ------------------------------------------------------------------ */
+    /* ------ html box inner content style */
+    .html-code-box .html-code-text-box pre {
+        font-size: 0.9rem;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /*                     Output Code Show Style end                     */
+    /* ------------------------------------------------------------------ */
+}
+
+@media only screen and (max-width: 650px) {
+
+    /* ------------------------------------------------------------------ */
+    /*                     Output Code Show Style Start                   */
+    /* ------------------------------------------------------------------ */
+    /* ------ html box inner content style */
+    .html-code-box .button-area h2,
+    .css-code-box .button-area h2 {
+        font-size: 1.5rem;
+    }
+
+    .html-code-box .html-code-text-box pre {
+        font-size: 0.7rem;
+
+    }
+
+    /* ------------------------------------------------------------------ */
+    /*                     Output Code Show Style end                     */
+    /* ------------------------------------------------------------------ */
+}
